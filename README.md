@@ -22,3 +22,6 @@ Read the code to get a better picture.
 It gets the job done, but it isn't a complete AHK implementation and it depends on the <a href="https://github.com/Eun/MoveToDesktop">MoveToDesktop program found on GitHub</a>, which is no longer maintained.
 
 This also includes experimental, incomplete functions that are currently not in use. They're used to replace the current, less efficient workspace movement function that features a lot of redundant steps. It'll likely never be complete because I don't use the workspace/Task View feature on Windows anymore.
+
+## `Index key remapper.ahk`
+`Index key remapper.ahk` allows for Alt + {number} keybinds insteads of Ctrl + {number}. Works with Explorer.exe, Chrome, and Windows Terminal. Makes Windows more Linux-like.
