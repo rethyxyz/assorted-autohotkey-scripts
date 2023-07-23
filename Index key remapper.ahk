@@ -29,4 +29,9 @@ Menu, Tray, Icon, shell32.dll, 68, 1
     !8:: Send, ^!8
     !9:: Send, ^!9
     !0:: Send, ^!0
+
+    ^PgUp:: Send, ^+{Tab}
+    ^PgDn:: Send, ^{Tab}
+
+    ^w:: Send, ^+w
 }
