@@ -35,3 +35,8 @@ Menu, Tray, Icon, shell32.dll, 68, 1
 
     ^w:: Send, ^+w
 }
+
+#If WinActive("ahk_exe Code.exe")
+{
+    ^w:: Send, ^{F4}
+}
