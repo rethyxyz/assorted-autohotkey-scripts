@@ -1,3 +1,5 @@
+#Include %A_ScriptDir%\Natural_keyboard_4000_support.ahk
+
 #SingleInstance, Force
 SendMode Input
 SetWorkingDir, %A_ScriptDir%
@@ -7,7 +9,6 @@ SetWorkingDir, %A_ScriptDir%
 !j:: Send  {Down}
 !k:: Send    {Up}
 !l:: Send {Right}
-F3:: Run "Excel link extractor.ahk"
 
 ; F1 - F12
 ;
@@ -39,3 +40,19 @@ $F12:: Send ^{PgDn}
 ; Command keys
 $Pause::   Send ^{w}
 Capslock:: Escape
+
+LWin & WheelUp::send {Volume_Up}
+LWin & WheelDown::send {Volume_Down}
+
+MsNatural4000_NumpadLeftBracket:
+	if (state = 1)
+	{
+		;toggle
+		state = 0
+		return
+	}
+
+	;toggle
+	state = 1
+	return
+
